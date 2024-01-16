@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .margin1{
+                margin-left: 400px;
+                margin-top: 40px;
+            }
+            .margin{
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+            .size{
+                margin-left: 120px;
+                margin-top: 20px;
+                font-size: 22;
+            }
+            .label_margin{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .label_margin2{
+                margin-left: 50px;
+                margin-right: 20px;
+                margin-top: 10px;
+            }
+            .display{
+                display: flex;
+                
+            }
+            .div_margin{
+                margin-right: 35px;
+                margin-top: 20px;
+
+            }
+            .div_margin1{
+                margin-right: 29px;
+                margin-top: 20px;
+
+            }
+            .label_margin1{
+                margin-left: 50px;
+                margin-right: 40px;
+            }
+            .pwd{
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+          .emply{
+            margin-left: -15px;
+          }
+          .login-margin{
+            margin-left: 70px;
+            margin-top: 20px;
+          }
+          .dropdown-class{
+            margin-left: 42px;
+          }
+        </style>
+    </head>
+    <body>
+    <div class="margin1">
+        <p class="margin">
+          <b>  Figure 30-1</b> Sample HTML Form
+        </p>
+        <p class="size">Novell Services Login</p><br>
+        <form>
+            <label class="label_margin" for="username">Username:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label class="label_margin" for="Pwd">Password:</label>
+            <input class="pwd" type="password" id="pwd" name="pwd" required><br><br>
+            <label class="label_margin" for="city">City:</label>
+            <input class="label_margin1" type="text" id="city" name="city" required><br><br>
+            <label class="label_margin" for="emply">Employment:</label>
+            <input class="emply" type="text" id="emply" name="emply" required><br><br>
+            <div class="label_margin2">
+            <label for="server">Web Server:</label>
+            <select class="dropdown-class" id="server" name="server" required>
+                <option value=""disabled selected >choose a Server</option>
+              <option value="Node.js">Node.js Web Server</option>
+              <option value="Lighttpd">Lighttpd Web Server</option>
+              <option value="js">Jigsaw Server Web Server</option><br><br>
+             
+            </select><br><br>
+            <div class="display">
+                <div class="div_margin">Please Specify<br>your role: </div>
+                <div>
+                    <input type="radio" id="admin" name="role" value="admin" required>
+            <label for="admin">Admin</label><br>
+            <input type="radio" id="engineer" name="role" value="engineer" required>
+            <label for="engineer">Engineer</label><br>
+            <input type="radio" id="manager" name="role" value="manager" required>
+            <label for="manager">Manager</label><br>
+            <input type="radio" id="guest" name="role" value="guest" required>
+            <label for="guest">Guest</label>
+                </div>
+            </div>
+            <br><br>
+            <div class="display">
+                <div class="div_margin1">Single Sign-on<br>to the following</div>
+                <div>
+            <input type="checkbox" id="mail" name="sign-on" value="mail" required>
+            <label for="mail">Mail</label><br>
+            <input type="checkbox" id="Pyroll" name="sign-on" value="Pyroll" required>
+            <label for="Pyroll">Pyroll</label><br>
+            <input type="checkbox" id="Self-Services" name="sign-on" value="Self-Services" required>
+            <label for="Self-Services">Self-Services</label><br>
+            
+                </div>
+            </div>
+            <div class="login-margin">
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset"></div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
