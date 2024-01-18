@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            div{
+                margin: 100px;
+            }
+         button{
+           border: 1px solid palevioletred;
+           position: absolute;
+           z-index: 2;
+           height: 35px;
+           color: palevioletred;    
+         }
+         button::before{
+            content: " ";
+            position: absolute;
+            width: 115%;
+            z-index: 1;
+            height:20px;
+            left: -6;
+            top: 5;   
+            border: 1px solid palevioletred;
+         }
+
+         
+     
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <button>Click me</button>
+            
+        </div>
+    </body>
+</html>
