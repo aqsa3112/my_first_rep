@@ -17,10 +17,11 @@ body{
 }
 
 .top-div {
-  background-color: #333;
+  background-color: black;
   color: #fff;
+  padding-top: 10px;
   text-align: center;
-  padding: 10px;
+  height: 20px;
   font-size: 14;
 }
 .top-div span {
@@ -116,7 +117,7 @@ nav {
 
 .main-div1 img {
   width: 100%;
-  height: 640px;
+  height: calc(100vh-20px);
   object-fit: cover;
 }
 .main-div2 {
@@ -145,6 +146,7 @@ nav {
 }
 .main-div2 div:nth-child(4){
   font-size: 12px;
+  cursor: pointer;
 }
 .main-div2 a {
   text-decoration: underline;
