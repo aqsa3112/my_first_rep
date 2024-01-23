@@ -8,9 +8,9 @@ li {
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: "YourFont", sans-serif;
+@font-face{
+  font-family: myfont;
+  src: url(graphik-regular.woff);
 }
 
 .top-div {
@@ -69,6 +69,7 @@ nav {
 .right-links {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 20px;
   padding: 0;
 }
@@ -130,10 +131,16 @@ nav {
   font-weight: bold;
 }
 .main-div2 div:first-child {
-  font-weight: bold;
+  font-size: 15px;
+  font-family: myfont;
+  font-weight: bolder;
+  color: black;
+  
 }
 .main-div2 div:nth-child(2) {
-  font-size: 27;
+  font-size: 26px;
+  font-family: myfont;
+  color: black;
 }
 .main-div2 div:nth-child(3){
   font-size: 12;
