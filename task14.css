@@ -1,0 +1,144 @@
+@font-face{
+    font-family: graphik-regular;
+    src: url(graphik-regular.woff);
+  }
+  body{
+    font-family: graphik-regular;
+    margin: 0;
+    height: 2000px;
+  }
+  .main-div{
+    position: relative;
+    z-index: 1;
+  }
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    margin-left: 10px;
+  }
+
+  .image-container img {
+    width: 94%; 
+    box-sizing: border-box;
+    
+  }
+  .image-caption {
+    text-align: left;
+    margin-top: 10px; 
+  }
+  .image-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 14;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14;
+    position: fixed;
+    z-index: 2;
+  }
+  .left-links,
+.right-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 0;
+}
+
+.left-links .nav-link,
+.right-links .nav-link {
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  color: black;
+}
+.nav-link span {
+  background-color: black;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  line-height: 1.8;
+  color: white;
+  border-radius: 100%;
+  margin-left: 5px;
+  font-size: 14;
+}
+.etq-bold {
+    font-size: 24;
+    font-weight: bold;
+  }
+  .shoe div:nth-child(2){
+    font-weight: bolder;
+    font-size: 14px;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    color: black;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .menu-links {
+    display: none;
+    list-style: none;
+    visibility: hidden;
+    color: white;
+    font-size: 12;
+    text-decoration: none;
+  }
+  .menu-links li {
+    margin-right: 20px;
+  }
+  .menu-icon:hover + .menu-links {
+    visibility: visible;
+  }
+  @media (max-width: 768px){
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px; 
+      }
+      .image-container img{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .shoe div:nth-child(2){
+        font-size: 12;
+      }
+      .image-caption{
+        font-size: 12;
+      }
+      .menu-icon {
+        display: block;
+      }
+    
+      .left-links,
+      .right-links {
+        display: none;
+      }
+      .menu-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        padding: 20px;
+      }
+      .menu-links a{
+        color: black;
+        text-decoration: none;
+    }
+
+  }
+ 
