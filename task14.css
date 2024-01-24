@@ -7,6 +7,101 @@
     margin: 0;
     height: 2000px;
   }
+  h2{
+    margin: 0 30px;
+  }
+  .div-table{
+    overflow: auto;
+  }
+
+table 
+{
+  width: 100%;
+  margin: 0 30px;
+  white-space: nowrap;
+  border-spacing: 0 15px;
+}
+
+th, td {
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: white;
+}
+ thead tr:hover{
+  color: red;
+}
+
+ td{
+    background-color: rgba(127, 255, 212, 0.247);  
+ }
+ .row1:hover td{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+ .row2:hover td{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+ .row3:hover td{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+ .row4:hover td{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+.profile-img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 5px; 
+
+}
+.container {
+  border-radius: 10px; 
+}
+.row1 td:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.row1 td:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.row2 td:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.row2 td:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.row3 td:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.row3 td:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.row4 td:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.row4 td:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
   .main-div{
     position: relative;
     z-index: 1;
@@ -14,7 +109,7 @@
 .image-container {
     display: flex;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding: 120px 30px;
     margin-left: 10px;
   }
 
@@ -35,10 +130,15 @@
   nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 60px);
     font-size: 14;
     position: fixed;
+    background: rgba(165, 255, 255, 0.068);
+    top: 30px;
+    left: 20px;
     z-index: 2;
+    border: 1px solid black;
+   
   }
   .left-links,
 .right-links {
